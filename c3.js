@@ -6796,7 +6796,7 @@
                     }
 
                     if (!maxWidth || maxWidth <= 0) {
-                        maxWidth = isVertical ? 95 : params.isCategory ? (Math.ceil(scale1(ticks[1]) - scale1(ticks[0])) - 12) : 110;
+                        maxWidth = isVertical ? 95 : params.isCategory ? (Math.ceil(scale1(ticks[1]) - scale1(ticks[0])) - 12) - 10: 110;
                     }
 
                     function split(splitted, text) {
