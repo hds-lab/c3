@@ -5482,7 +5482,7 @@
     c3_chart_internal_fn.generateColor = function () {
         var $$ = this, config = $$.config, d3 = $$.d3,
             colors = config.data_colors,
-            pattern = notEmpty(config.color_pattern) ? config.color_pattern : d3.scale.category10().range(),
+            pattern = notEmpty(config.color_pattern) ? config.color_pattern : d3.scale.category20().range(),
             callback = config.data_color,
             ids = [];
 
