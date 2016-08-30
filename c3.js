@@ -878,7 +878,7 @@
             .attr('width', $$.width)
             .attr('height', $$.height);
         // MEMO: parent div's height will be bigger than svg when <!DOCTYPE html>
-        $$.selectChart.style('max-height', $$.currentHeight + "px");
+        // $$.selectChart.style('max-height', $$.currentHeight + "px");
     };
 
 
@@ -7132,7 +7132,7 @@
                     }
 
                     if (!maxWidth || maxWidth <= 0) {
-                        maxWidth = isVertical ? 95 : params.isCategory ? (Math.ceil(scale1(ticks[1]) - scale1(ticks[0])) - 12) : 110;
+                        maxWidth = isVertical ? 95 : params.isCategory ? (Math.ceil(scale1(ticks[1]) - scale1(ticks[0])) - 12) - 10: 110;
                     }
 
                     function split(splitted, text) {
